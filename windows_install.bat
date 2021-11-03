@@ -15,7 +15,7 @@ copy /Y "%currdir%\windows_service_delete.bat" %installpath%
 copy /Y "%currdir%\windows_uninstall.bat" %installpath%
 copy /Y "%currdir%\firewall_allow_grafana.bat" %installpath%
 copy /Y "%currdir%\firewall_delete_grafana.bat" %installpath%
-copy /Y "%currdir%\nssm.exe" %installpath%
+copy /Y "%currdir%\nssm.exe" %installpath%\bin
 
 call windows_service_create.bat
 call firewall_allow_grafana.bat
