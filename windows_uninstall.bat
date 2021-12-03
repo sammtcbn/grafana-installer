@@ -5,6 +5,8 @@ cd /d "%currdir%"
 
 set installpath=C:\grafana
 
+del /f /q C:\Users\%UserName%\Desktop\grafana.html
+
 call firewall_delete_grafana.bat
 call windows_service_delete.bat
 

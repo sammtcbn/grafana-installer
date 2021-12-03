@@ -20,6 +20,8 @@ copy /Y "%currdir%\nssm.exe" %installpath%\bin
 call windows_service_create.bat
 call firewall_allow_grafana.bat
 
+copy /Y "%currdir%\grafana.html" C:\Users\%UserName%\Desktop
+
 :END
 echo bye
 timeout /t 3
