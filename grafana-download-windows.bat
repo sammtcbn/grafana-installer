@@ -3,7 +3,7 @@ set currdir=%~dp0
 IF "%currdir:~-1%"=="\" SET currdir=%currdir:~0,-1%
 cd /d "%currdir%"
 
-set dlver=8.2.3
+set dlver=8.5.9
 set dlfile=grafana-%dlver%.windows-amd64.zip
 set dlurl=https://dl.grafana.com/oss/release/%dlfile%
 set foldername=grafana-%dlver%
